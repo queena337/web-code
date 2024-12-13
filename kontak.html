@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami</title>
+    <link rel="stylesheet" href="kontak.css">
+</head>
+<body>
+    <nav>
+        <header>
+            <div class="logo">
+            <img src="logo toko.jpeg" alt="Logo">
+            <h1>CODEMARKET</h1>
+             </div>
+       </header>
+           <ul class="nav-links" id="nav-links">
+               <li><a href="index.html" class="nav-item">Beranda</a></li>
+               <li><a href="produk.html" class="nav-item">Produk</a></li>
+               <li><a href="kontak.html" class="nav-item">Kontak</a></li>
+               <li><a href="login.html" class="nav-item">Login</a></li>
+           </ul>
+       </nav>
+    <div class="contact-container">
+        <h1>Hubungi Kami</h1>
+        <div class="contact-list">
+            <div class="contact-item">
+                <h3>Telepon 1</h3>
+                <p>+62 882-1263-8783</p>
+                <button onclick="contact('tel:+6288212638783')">Hubungi</button>
+            </div>
+            <div class="contact-item">
+                <h3>Telepon 2</h3>
+                <p>+62 838-7645-9470</p>
+                <button onclick="contact('tel:+6283876459470')">Hubungi</button>
+            </div>
+            <div class="contact-item">
+                <h3>WhatsApp</h3>
+                <p>+62 838-7645-9470</p>
+                <button onclick="contact('https://wa.me/6283876459470')">Hubungi</button>
+            </div>
+            <div class="contact-item">
+                <h3>Email</h3>
+                <p>auraaqueeniilmira12@gmail.com</p>
+                <button onclick="contact('Admin:auraaqueeniilmira12@gmail.com')">Kirim Email</button>
+            </div>
+        </div>
+        <a href="keranjang.html" class="btn-to-cart">Lihat Keranjang Belanja</a>
+    </div>
+    <script>
+        function contact(link) {
+            window.location.href = link;
+        }
+    </script>
+</body>
+</html>
